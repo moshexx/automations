@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { JWT } = require('google-auth-library');
+const axios = require('axios');
 require('dotenv').config();
-
 
 // הגדרת משתני הסביבה לקריאה מהמפתח של OpenAI ו-Google Sheets
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -71,14 +71,16 @@ If any category receives a score below 9, provide detailed feedback on how to im
  * פונקציה לשמירת הפוסט והמשוב ל-Google Sheets
  */
 async function saveToGoogleSheets(topic, content, review) {
-    const doc = new GoogleSpreadsheet(GOOGLE_SHEETS_ID);
-    console.log(doc);
-    try {
-        
-        await doc.useServiceAccountAuth({
-            client_email: SERVICE_ACCOUNT_EMAIL,
-            private_key: PRIVATE_KEY,
-        });
+    const serviceAccountAuth = new JWT({
+        email: SERVICE_ACCOUNT_EMAIL,
+        key: PRIVATE_KEY,
+        scopes: [
+            'https://www.googleapis.com/auth/spreadsheets',
+        ],
+    });
+
+    const doc = new GoogleSpreadsheet(GOOGLE_SHEETS_ID, serviceAccountAuth);
+    try {        
         await doc.loadInfo();
         const sheet = doc.sheetsByIndex[0];
         
@@ -93,17 +95,13 @@ async function saveToGoogleSheets(topic, content, review) {
  * פונקציה לניהול שיפור תוכן באיטרציות
  */
 async function iterativeImprovement(topic) {
-    // let content = await generateContent(topic);
-    // let review = await reviewContent(content);
+    let content = await generateContent(topic);
+    let review = await reviewContent(content);
     
-    // while (!isContentApproved(review)) {
-    //     content = await improveContent(content, review);
-    //     review = await reviewContent(content);
-    // }
-    
-    // let topic = 'topic test';
-    let content = 'content test';
-    let review = 'review test';
+    while (!isContentApproved(review)) {
+        content = await improveContent(content, review);
+        review = await reviewContent(content);
+    }
 
     await saveToGoogleSheets(topic, content, review);
     return content;
@@ -138,4 +136,4 @@ async function improveContent(content, review) {
 (async () => {
     const finalContent = await iterativeImprovement("איך אוטומציה משפרת את היעילות העסקית");
     console.log("Final Approved Content:", finalContent);
-})(); 
+})();
