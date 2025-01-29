@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>פשוטומציה - עלינו</title>
+    <style>
+        body {
+            font-family: "Assistant", sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            direction: rtl;
+            padding-bottom: 50px;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #e8eff7;
+            text-align: center;
+            padding: 0;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #1e3d58;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #1e3d58;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-media img {
+            margin: 0 15px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        .about-section {
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #e8eff7;
+        }
+
+        .about-text {
+            font-size: 20px;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .social-media img {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%91%D7%90%D7%A0%D7%A8+%D7%97%D7%9C%D7%A7.png" alt="באנר יוטיוב">
+</header>
+
+<nav>
+    <a href="index.html">דף הבית</a>
+    <a href="about.html">עלינו</a>
+    <a href="articles.html">מאמרים</a>
+    <a href="contact_form.html">צור קשר</a>
+</nav>
+
+
+<div class="container">
+    <h1>הסיפור שלנו</h1>
+    <p>פשוטומציה נולדה מתוך הבנה עמוקה: עסקים קטנים ובינוניים זקוקים לפתרונות אוטומציה חכמים ופשוטים, שיעזרו להם להתמקד בצמיחה במקום בניירת ותהליכים מייגעים. המשימה שלנו היא להפוך את הטכנולוגיה המתקדמת לנגישה ופשוטה לכל בעל עסק.</p>
+
+    <div class="about-section">
+        <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%AA%D7%9E%D7%95%D7%A0%D7%AA+%D7%A4%D7%A8%D7%95%D7%A4%D7%99%D7%9C+-+%D7%A4%D7%99%D7%99%D7%A1%D7%91%D7%95%D7%A7.png" alt="תמונה של משה כהן">
+        <div class="about-text">
+            <h3>מי אנחנו?</h3>
+            <p>בראש פשוטומציה עומד משה, מומחה אוטומציה עם ניסיון עשיר בפיתוח פתרונות טכנולוגיים. מה שמייחד אותנו הוא היכולת לראות את התמונה הגדולה של העסק שלך, ובמקביל לרדת לפרטים הקטנים ביותר כדי ליצור פתרון מושלם עבורך.</p>
+        </div>
+    </div>
+
+    <h2>תחומי המומחיות שלנו</h2>
+    <div class="expertise-list">
+        <div class="expertise-item">
+            <h3>אוטומציה של תהליכים</h3>
+            <p>הפיכת תהליכים ידניים לאוטומטיים, חיסכון בזמן ומשאבים, והפחתת טעויות אנוש.</p>
+        </div>
+        <div class="expertise-item">
+            <h3>ייעול תהליכי עבודה</h3>
+            <p>ניתוח וארגון מחדש של תהליכי העבודה בעסק, יצירת שיטות עבודה יעילות יותר.</p>
+        </div>
+        <div class="expertise-item">
+            <h3>פתרונות מותאמים אישית</h3>
+            <p>פיתוח פתרונות ייחודיים המותאמים בדיוק לצרכים ולאתגרים של העסק שלך.</p>
+        </div>
+    </div>
+
+    <h2>הגישה שלנו</h2>
+    <ul>
+        <li><strong>פשטות:</strong> אנחנו מאמינים שטכנולוגיה מתקדמת צריכה להיות נגישה ופשוטה לשימוש.</li>
+        <li><strong>אישיות:</strong> כל פתרון מותאם במדויק לצרכים הייחודיים של העסק שלך.</li>
+        <li><strong>מקצועיות:</strong> שימוש בטכנולוגיות המתקדמות ביותר תוך שמירה על פשטות בממשק המשתמש.</li>
+        <li><strong>ליווי מלא:</strong> תמיכה וליווי לאורך כל הדרך, מהאפיון ועד ההטמעה.</li>
+    </ul>
+
+    <div class="cta-section">
+        <h3>רוצים לשמוע עוד על איך אנחנו יכולים לעזור לעסק שלכם?</h3>
+        <p class="small-text">בואו נקבע שיחת היכרות אישית ונבין יחד איך אפשר להפוך את העסק שלכם ליעיל יותר. צרו קשר עוד היום!</p>
+    </div>
+</div>
+
+<div class="social-media">
+    <a href="https://www.facebook.com/profile.php?id=61571198279699&locale=he_IL">
+        <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%A4%D7%99%D7%99%D7%A1%D7%91%D7%95%D7%A7+%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99+3.png" alt="פייסבוק">
+    </a>
+    <a href="https://www.youtube.com/@pashutomazia">
+        <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%99%D7%95%D7%98%D7%99%D7%95%D7%91+%D7%A8%D7%99%D7%91%D7%95%D7%A2+2.png" alt="יוטיוב">
+    </a>
+    <a href="https://wa.me/+972542262956?text=שלום%20הגעתי%20דרך%20האתר%20ואני%20מתעניין%20באוטומציה%20לעסק%20שלי">
+        <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%95%D7%95%D7%98%D7%A1%D7%90%D7%A4+2.png" alt="ווטסאפ">
+    </a>
+</div>
+</div>
+
+<footer>
+    <p class="small-text">© 2025 פשוטומציה - להפוך סדר וארגון לקסם פשוט</p>
+</footer>
+
+</body>
+</html>

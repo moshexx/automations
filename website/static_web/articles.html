@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>פשוטומציה - מאמרים</title>
+    
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Optional max width */
+            margin: 0 auto; /* Center the content */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        body {
+            font-family: "Assistant", sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            direction: rtl;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background-color: #e8eff7; /* צבע חדש - תואם לבאנר */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #1e3d58;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #1e3d58;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .articles-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .article {
+            width: 300px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .article img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .article-title {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #1e3d58;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .articles-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .article {
+                width: 90%;
+                height: auto;
+            }
+
+            .article img {
+                height: auto;
+            }
+
+            .article-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%91%D7%90%D7%A0%D7%A8+%D7%97%D7%9C%D7%A7.png" alt="באנר יוטיוב" width="100%">
+</header>
+
+<nav>
+    <a href="index.html">דף הבית</a>
+    <a href="about.html">עלינו</a>
+    <a href="articles.html">מאמרים</a>
+    <a href="contact_form.html">צור קשר</a>
+</nav>
+
+<div class="container">
+    <h2>מאמרים נבחרים</h2>
+    <p>הטכנולוגיה שמובילה את העסק שלך קדימה</p>
+    <div class="articles-images">
+        <!-- קישור למאמר הראשון -->
+        <div class="article">
+            <a href="first_article.html">
+                <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%90%D7%99%D7%A9.webp" alt="מהי מערכת לניהול קשרי לקוחות">
+                <div class="article-title">מהי מערכת לניהול קשרי לקוחות</div>
+            </a>
+        </div>
+
+        <!-- קישור למאמר השני -->
+        <div class="article">
+            <a href="second_article.html">
+                <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%9C%D7%A4%D7%A0%D7%99+%D7%95%D7%90%D7%97%D7%A8%D7%99.webp" alt="12 סיבות למה כדאי להשקיע בצ'אטבוט עם אינטליגנציה מלאכותית">
+                <div class="article-title">12 סיבות למה כדאי להשקיע בצ'אטבוט עם אינטליגנציה מלאכותית</div>
+            </a>
+        </div>
+
+        <!-- קישור למאמר השלישי -->
+        <div class="article">
+            <a href="third_article.html">
+                <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%9E%D7%A9%D7%A4%D7%9A+%D7%9B%D7%A1%D7%A3.png" alt="אוטומציות בעסק קטן">
+                <div class="article-title">אוטומציות בעסק קטן</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 פשוטומציה - כל הזכויות שמורות</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>פשוטומציה - צור קשר</title>
+    <style>
+        body {
+            font-family: "Assistant", sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            direction: rtl;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background-color: #e8eff7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #1e3d58;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #1e3d58;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .form-container {
+            margin-top: 30px;
+        }
+
+        .form-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .form-container button {
+            background-color: #1e3d58;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #009ad8;
+        }
+
+        .required {
+            color: red;
+            font-weight: bold;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-media img {
+            margin: 0 15px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%91%D7%90%D7%A0%D7%A8+%D7%97%D7%9C%D7%A7.png" alt="באנר יוטיוב" width="100%">
+</header>
+
+<nav>
+    <a href="index.html">דף הבית</a>
+    <a href="about.html">עלינו</a>
+    <a href="articles.html">מאמרים</a>
+    <a href="contact_form.html">צור קשר</a>
+</nav>
+
+<div class="container">
+    <div class="form-container">
+        <h1>צור קשר עם פשוטומציה</h1>
+        <form id="contactForm" action="javascript:void(0);">
+            <label for="name">שם <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+            <div id="nameError" class="error-message"></div>
+
+            <label for="phone">טלפון <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" pattern="^05\d{8}$" required 
+                title="המספר טלפון חייב להתחיל ב-05 ולכלול 10 ספרות (לדוגמה: 0542262956)">
+            <div id="phoneError" class="error-message"></div>
+
+            <label for="problem">מה הבעיה המרכזית שהעסק שלך נתקל בה? <span class="required">*</span></label>
+            <textarea id="problem" name="problem" placeholder="הסבר על הבעיה המרכזית" required></textarea>
+            <div id="problemError" class="error-message"></div>
+
+            <button type="submit">שלח</button>
+        </form>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61571198279699&locale=he_IL">
+            <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%A4%D7%99%D7%99%D7%A1%D7%91%D7%95%D7%A7+%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99+3.png" alt="פייסבוק">
+        </a>
+        <a href="https://www.youtube.com/@pashutomazia">
+            <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%99%D7%95%D7%98%D7%99%D7%95%D7%91+%D7%A8%D7%99%D7%91%D7%95%D7%A2+2.png" alt="יוטיוב">
+        </a>
+        <a href="https://wa.me/+972542262956?text=שלום%20הגעתי%20דרך%20האתר%20ואני%20מתעניין%20באוטומציה%20לעסק%20שלי">
+            <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%95%D7%95%D7%98%D7%A1%D7%90%D7%A4+2.png" alt="ווטסאפ">
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 פשוטומציה - כל הזכויות שמורות</p>
+</footer>
+
+<!-- JavaScript for form submission -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const problem = document.getElementById('problem').value;
+
+		// validations
+        const phoneRegex = /^05\d{8}$/; // תו ראשון '0', אחרי זה 5, ואחריו 8 ספרות
+        if (!phoneRegex.test(phone)) {
+            alert('המספר טלפון לא חוקי. יש להזין מספר טלפון ישראלי בפורמט: 05XXXXXXXX');
+            return;
+        }
+        
+        const data = {
+            name: name,
+            phone: phone,
+            problem: problem
+        };
+
+        fetch('https://hook.eu2.make.com/aj7osn98k4lnkmq8cb772gulq8jyojc6', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            console.log(response)
+            return response;
+        })
+        .then(data => {
+            const successMessage = `היי ${name},\n\nהפרטים שלך התקבלו בהצלחה!`;
+            const followUpMessage = `ניצור קשר בהקדם בטלפון ${phone} כדי לדבר על הבעיה שציינת:\n"${problem}"\n\nנשמח לעזור ולהציע פתרון!`;
+        
+            alert(successMessage + "\n\n" + followUpMessage);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('אירעה שגיאה, נסה שנית.');
+        });
+    });
+</script>
+
+</body>
+</html>

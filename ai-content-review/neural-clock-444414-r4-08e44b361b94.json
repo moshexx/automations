@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "neural-clock-444414-r4",
+  "private_key_id": "08e44b361b9459289d6baf7d44674e64b2d35de8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLKuOL1DKoDK+/\n6MBoOSpAvURHhDXmHM1dCqqjXfMPnvsDA2dIvXLcHUWePv9yfA6kvk/M/SV0U2QY\n92p/vqqkW8u44OGWUHs12uHbyMnx0JrH85Q9//IOlRnOk4A0Y/aucN4KWFNoIyeD\nGagJ+iD09DMlriTSiBVVg06AOs8StmtLwyKqzIx4NmssENe8g41To0VVAvYfr4JZ\n4cn0WPVubNdIggm8qFyvQbS8yz5Sr8z74xDyOhpDcTDo68mNkrNWIjTcrPYJXpzw\n0jobpIqQmseymIHoT3EjYch/LfJgPiSzNgheEhFYgnNGD2St400Mej9PMlFF1HwL\nZ4GmEQexAgMBAAECggEAWZ9LzW0IA5XFGZUk+1TsTK6xJhMua5odBYQlDffttuBc\nvlGMCEx6FJtdEJedu/T5yLajITwyf4Qhzdmmwz9qqyJLVfztxo8uKu2pYHjMjL2G\n6dmLdWYoc0JWpgfvMC1ArmbfrBSWhoOrdGum8u/CBgyLW33chHq/Xn+T64EFw6yn\nhwfqSVE+X3Xt51Wq1yNmkNzHt7393SKWYEF+UMeBgDA54YuP8TSR3JZOpIxfY0oN\nAWmAZMqaRxhhzYe2Cc2IyorY79bCxo1jDBF6mBp0JVpP3Ci4DltKQ34WSixiQ06h\nf+v+btF1cVa1p4Z23bvSz1vwfi4bfR1g4ZFGDhEC+QKBgQDsPD7NfspGLhMAFMwM\nYpbqK8YxzOMQE0Axx/0OMLFFAZggWO84v/WUnG129i1lMo7uuC5Nb4LS13W7hT77\nfy6sroTfWO3QcZL4p9p6/C1P7g91u3PMyyby0ISTjcsrhqceCDaDT+OMOG/pk/dG\n0cUmflhNHWi4wuxG0wTXnuK3XwKBgQDcKmNcy0fBEVbaq9fE6lSmzTqZL3zqbkL5\nDoDOzN2qy8cBnxqEFTjtJfjj8UV1GgX7S9AXmIIfFK7jwntPFC+LrMV8zq5RGFoW\ngKTN3Iek5cAIUo7XqCcx814xD+T6UX9SnzCgdqeenu3DSXYwfTiEJI5MSO3ninYs\nIGeONhXq7wKBgHW5FAbt3zkX7soEkya83r31cIASvTiej0f/hGDU7RIZWEkOaLAc\nIPKc/YPh6/9ZMZdO22wlXMlbK8V2AkvsNkNBeN+gfmp4nqghZaQSFTaWyMd/0ZZF\nyrQIK3komQ2ovZEewKOxZRDUcxiwbvKwyJGFNtW/CRfBs2Mb93bIK+z7AoGBAK3N\naJMghoyLO510eukgc6MZ8GBtdJc8Y/Jo2JZoc7UZGQjWqQAMINxVVZ3cIZDH8mDn\nAGcgJdiTY1y5cs6CiOYiheR45HNwXe3VsEQzC4HJPUdUpR7px8dO79SbT4+sNm7q\n7GBASyKVI+0+WOb+c1cd5JekGurmC1PaYOWLHNJRAoGAFXIeUXFrqcOGGZCc2HyB\nF7sd9i+++/vmW81mnBAYheLdG601+W7sEuw93M3ic52QNIKQSa26drNf861m263W\nHHejB89Pn8waWHYYTNIE7JeX3IKVzFGWLpIvD+0sXM1Q+16xzwYJmPIpWxF/z8R5\nQl2j4uXPI1VWTQ71W9Rr5x8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mega-131@neural-clock-444414-r4.iam.gserviceaccount.com",
+  "client_id": "117500223916347273399",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mega-131%40neural-clock-444414-r4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
