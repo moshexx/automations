@@ -28,8 +28,8 @@
 
 ## תרשים זרימה
 
+[לינק לתרשים](https://links.pasutomazia.co.il/backup-airtable-heb-chart)
 תרשים זה מציג את תהליך הגיבוי המלא:
-
 ```mermaid
 flowchart TD
     A[התחלה] --> B{בדיקת סביבה}

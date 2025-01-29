@@ -25,7 +25,7 @@ This tool provides automated backup functionality for Airtable databases to CSV 
 - ⚙️ Simple configuration
 
 ## Flow Diagram
-
+[link to the chart](https://links.pasutomazia.co.il/backup-airtable-en-chart)
 ```mermaid
 flowchart TD
     A[Start] --> B{Check Environment}
