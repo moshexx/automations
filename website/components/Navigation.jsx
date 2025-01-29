@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -8,6 +9,7 @@ const Nav = styled.nav`
 `;
 
 const StyledNavLink = styled(NavLink)`
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -40,6 +42,10 @@ const Navigation = () => {
       <StyledNavLink to="/contact">
         צור קשר
       </StyledNavLink>
+      <StyledLink to="/">דף הבית</StyledLink>
+      <StyledLink to="/about">עלינו</StyledLink>
+      <StyledLink to="/articles">מאמרים</StyledLink>
+      <StyledLink to="/contact">צור קשר</StyledLink>
     </Nav>
   );
 };

@@ -1,46 +1,122 @@
-<!DOCTYPE html>
-<html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>פשוטומציה - עלינו</title>
-    <style>
-        body {
-            font-family: "Assistant", sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            direction: rtl;
-            padding-bottom: 50px;
-            overflow-x: hidden;
-        }
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Container, Box, Typography, AppBar, Toolbar } from '@mui/material';
+import { motion } from 'framer-motion';
 
-        header {
-            background-color: #e8eff7;
-            text-align: center;
-            padding: 0;
-        }
+const theme = createTheme({
+  direction: 'rtl',
+  typography: {
+    fontFamily: 'Assistant, sans-serif',
+  },
+});
 
-        header img {
-            width: 100%;
-        }
+const StyledHeader = styled(Box)({
+  backgroundColor: '#e8eff7',
+  textAlign: 'center',
+  padding: 0,
+  '& img': {
+    width: '100%',
+  },
+});
 
-        nav {
-            text-align: center;
-            background-color: #1e3d58;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
+const StyledNav = styled(AppBar)({
+  backgroundColor: '#1e3d58',
+  '& .MuiToolbar-root': {
+    justifyContent: 'center',
+    padding: '20px',
+  },
+});
 
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            text-transform: uppercase;
+const NavLink = styled(Link)({
+  color: 'white',
+  margin: '15px',
+  textDecoration: 'none',
+  fontWeight: 'bold',
+  fontSize: '18px',
+  textTransform: 'uppercase',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+});
+
+const AboutSection = styled(Box)({
+  textAlign: 'center',
+  '& img': {
+    width: '260px',
+    height: '260px',
+    borderRadius: '50%',
+    marginBottom: '20px',
+    border: '5px solid #e8eff7',
+  },
+});
+
+const SocialMedia = styled(Box)({
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '20px 0',
+  '& img': {
+    margin: '0 15px',
+    width: '150px',
+    borderRadius: '10px',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+    transition: 'transform 0.3s ease',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    },
+  },
+});
+
+function App() {
+  return (
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Box sx={{ backgroundColor: '#f4f4f4', minHeight: '100vh' }}>
+          <StyledHeader>
+            <img src="https://pashutomazia-public.s3.il-central-1.amazonaws.com/website/%D7%91%D7%90%D7%A0%D7%A8+%D7%97%D7%9C%D7%A7.png" alt="באנר יוטיוב" />
+          </StyledHeader>
+
+          <StyledNav position="static">
+            <Toolbar>
+              <NavLink to="/">דף הבית</NavLink>
+              <NavLink to="/about">עלינו</NavLink>
+              <NavLink to="/articles">מאמרים</NavLink>
+              <NavLink to="/contact">צור קשר</NavLink>
+            </Toolbar>
+          </StyledNav>
+
+          <Container>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Typography variant="h1" gutterBottom>
+                הסיפור שלנו
+              </Typography>
+              
+              {/* Rest of the content components following Material-UI structure */}
+              
+            </motion.div>
+          </Container>
+
+          <SocialMedia>
+            {/* Social media links */}
+          </SocialMedia>
+
+          <Box component="footer" sx={{ backgroundColor: '#1e3d58', color: 'white', textAlign: 'center', padding: '10px' }}>
+            <Typography variant="body2">
+              © 2025 פשוטומציה - להפוך סדר וארגון לקסם פשוט
+            </Typography>
+          </Box>
+        </Box>
+      </ThemeProvider>
+    </Router>
+  );
+}
+
+export default App;
         }
 
         nav a:hover {
