@@ -47,7 +47,7 @@ python src/backup.py
 ```
 
 ## 📊 Process Flow
-
+[link to the chart](https://links.pasutomazia.co.il/backup-airtable-en-chart)
 ```mermaid
 flowchart TD
     A[Start] --> B{Check Environment}
@@ -147,4 +147,4 @@ Give a ⭐️ if this project helped you!
 - [schedule](https://pypi.org/project/schedule/) - Job scheduling
 
 ---
-Made with ❤️ by [Your Name]
+Made with ❤️ by Moshe Cohen - 0542262956 / moshexx@gmail.com
